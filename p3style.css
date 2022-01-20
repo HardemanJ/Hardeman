@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* indique que la bordure doit integrer la largeur et hauteur de lelement */
+    box-sizing: border;
+}
+header{
+    background-image: url(parquet.jpg);
+    background-repeat:none;
+    background-size: auto;
+    height: 395px;
+}
+header>h1{
+    position: absolute;
+    color: ivory;
+    margin-top: 150px;
+    height: 200px;
+    margin-left: 35%;
+    font-size: 5rem;
+    font-family: monospace;
+}
+h1{
+     position: relative; 
+     color: ivory;
+     text-align: center;
+}
+body{ 
+    background-image: url(../projet2.0/parquet2haut.jpg);
+    /* color: black; */
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+    margin: 40px 20px;
+    /* background-color: orange; */
+}
+.cardContainer{
+    position: relative;
+    min-height: 350px;
+    perspective:  2000px;
+    perspective-origin: top;
+    object-fit: cover;
+}
+.cardContainer:hover .card{
+    transform: rotateY(180deg);
+}
+.card{
+    position: relative;
+    height: 100%;   
+    color: white;
+    font-weight: bold;
+    transition:transform 1.5s ease;
+    transform-style: preserve-3d;
+}
+.cardFront, .cardBack{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    padding: 30px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background-color: orangered;
+}
+.yellow{
+    background-color: gold;
+}
+.red{
+    background-color: red;
+}
+.white{
+    background-color: honeydew;
+}
+.green{
+background-color: darkgreen;
+}
+.black{
+    background-color: black;
+}
+.black p{
+    color: white;
+
+}
+.card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.cardBack{
+    background-image: url(panier.jpg);
+    /* image-rendering: relative; */
+    border-radius: 5px;
+    transform: rotateY(180deg);
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+.Bulls{
+    position: center;
+}
+.btn{
+}
+p{
+    color: black;
+}
+a{
+
+}
+@media screen {
+    
+}
